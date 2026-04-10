@@ -1,0 +1,955 @@
+body {
+  background-color: white;
+}
+
+p {
+  color: blue;
+}
+
+h4 {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(255, 255, 255, 0.09);
+  position: relative;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+}
+
+li p {
+  display: block;
+  color: #fcffe7;
+  font-size: 18px;
+  text-align: right;
+  padding: 0px 24px;
+  text-decoration: none;
+}
+
+li p {
+  display: block;
+  color: white;
+  font-size: 18px;
+  text-align: right;
+  padding: 0px 24px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(255, 255, 255,0.34);
+}
+
+ul {
+  border-top: .0px solid #000000;
+  border-right: .0px solid #000000;
+  border-left: .0px solid #000000;
+  border-bottom: .0px solid #575757;
+}
+
+body {
+   margin: .2;
+   padding: 0;
+} 
+
+li p {
+  text-align: center;
+  border-bottom: .0px solid #ffffff;
+  border-right: .0px solid #ffffff;
+  border-left: 00px solid #ffffff;
+  border-top: .0px solid #000000;
+}
+ 
+li a {
+  text-align: center;
+  border-bottom: .0px solid #000000;
+  border-right: 0px solid #000000;
+  border-left: 0px solid #000000;
+  border-top: .0px solid #000000;
+}
+
+.active {
+  background-color: #f5ffcb;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.inactive {
+  background-color: #ebffd3;
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  background-color: #8fdbff;
+  text-align: center;
+  padding: 20px;
+  width: 12%;
+  margin: auto;
+  height: 30px;
+  border: .51px solid #038cfc;
+}
+
+.column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+div {
+  text-align: center;
+}
+
+.ring {
+  margin-top: -25px;
+}
+
+.tag {
+  margin-top: 0px;
+} 
+
+hr {
+ border-top: 3px solid #1b1b1b;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  flex: 33.33%;
+  width: 33.33%;
+}
+
+.column2 {
+  flex: 50%;
+  left: -35.5%;
+  padding-left: 145px;
+} 
+
+.right {
+  float: right;
+  left: -22.7%;
+}
+
+.left {
+  float: left;
+  left: 23%;
+}
+
+.righ {
+  float: right;
+  left: 11.7%;
+}
+
+.let {
+  float: left;
+  left: -27.5%;
+} 
+
+.rig {
+  left: 12.7%;
+}
+
+
+.center {
+  float: left;
+  position: relative;
+  left: 26.5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.holographic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.holographic-card {
+  width: 120px;
+  font-family: 'Julius Sans One';
+  height: 55px;
+  background: rgba(255, 255, 255, 0.05); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+
+.holographic-card h2 {
+  color: rgb(242, 250, 250);
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgb(251, 251, 251)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.09);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+
+.center {
+  display: block;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column2 {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+  margin: auto;
+}
+
+.column2 img {
+  margin-top: 2px;
+  vertical-align: middle;
+}
+
+.img {
+  transition: transform .2s;
+  border-radius: 25px;
+}
+
+.img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px rgba(249, 249, 249, 0.2);
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+.border {
+  border-radius: 20px;
+}
+
+.border2 {
+  border-radius: 6px;
+}
+
+
+
+.margina {
+  margin: auto;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Optional: center vertically */
+  min-height: 10vh;         /* Full viewport height for vertical centering */
+}
+
+.hover-underline {
+  position: relative;
+  display: inline-block; /* or block if you want full width */
+  padding-bottom: 5px; /* space for underline */
+  cursor: pointer;
+  color: #000;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+.hover-underline2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: #white;
+  transition: width 0.3s ease;
+}
+
+.hover-underline2:hover::after {
+  width: 100%;
+}
+
+.footer-nav a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  margin: 0 9px;
+  margin-right: 125px;
+  margin-left: 125px;
+  padding-bottom: 0px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.footer-nav a:hover::after {
+  width: 100%;
+}
+
+.img2 {
+  transform: scale(1.05);
+  transition: transform .2s;
+}
+
+.img2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px rgba(255,255,255,255);
+}
+
+.yahoo {
+  border-radius: 25px;
+}
+
+.yahi {
+  border-radius: 5px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.17); /* Enlarge to 117>:)% */
+  }
+}
+
+.evil {
+  animation: pulse .0002s infinite ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+footer {
+	text-align: center;
+	padding: 1em;
+	max-width: 80px;
+	position: fixed;
+	top: 0;
+	right: 25px;
+	a {
+		text-decoration: none;
+		display: inline-block;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		background: transparent;
+		border: 1px dashed #fff;
+		color: #fff;
+		margin: 5px;
+		&:hover {
+			background: rgba(255, 255, 255, 0.1);
+		}
+		.icons {
+			margin-top: 12px;
+			display: inline-block;
+			font-size: 20px;
+		}
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.main-content {
+    height: 32vh;
+    margin-top: 0px;
+}
+
+/* Base */
+.concept {
+  padding:120px 0;
+  height: 60vh; 
+}
+
+/* FOREST */
+.concept-two {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    padding: 60px 0;
+    background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/forest.jpg)
+        center center / cover;
+}
+
+.concept-two .hover {
+    display: grid;
+    place-items: center;
+}
+
+.concept-two h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    transition: 0.3s ease;
+}
+
+.concept-two .hover:hover h1 {
+    transform: scale(1.5);
+    color: white;
+    -webkit-text-stroke: 0;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    list-style: none;
+    padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;           /* very high so nothing can cover it */
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+
+.book-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.book-image {
+    flex: 1 0 33.333%;   /* 1/3 width */
+}
+
+.book-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.book-text {
+    flex: 2 0 66.667%;   /* 2/3 width */
+}
+
+.book-description {
+    margin-bottom: 40px;   /* nice spacing between paragraphs */
+}
+
+
+/* ==================== DESERT PART ONLY – 30% HEIGHT ==================== */
+
+.concept-one {
+  display: grid;
+  grid: repeat(5, 1fr) / repeat(5, 1fr);
+  padding: 60px 0;         /* ← THIS MAKES IT ONLY 30% OF THE SCREEN */
+  width: 100%;
+  background: url("https://wallpapercave.com/wp/wp9554112.jpg") 
+    no-repeat center center / cover;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.concept-one h1 {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -30px;
+  transition: 0.5s ease;
+  z-index: 0;
+  letter-spacing: 25px;
+  font: 900 60px Montserrat;
+  color: #fff;
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.concept-one .hover {
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Hover interactions (exactly as you wrote them) */
+.concept-one .hover-1:hover ~ h1 { left: 30px; margin-top: -10px; }
+.concept-one .hover-2:hover ~ h1 { margin-top: -10px; }
+.concept-one .hover-3:hover ~ h1 { right: 30px; margin-top: -10px; }
+.concept-one .hover-4:hover ~ h1 { left: 30px; }
+.concept-one .hover-6:hover ~ h1 { right: 30px; }
+.concept-one .hover-7:hover ~ h1 { left: 30px; margin-top: -50px; }
+.concept-one .hover-8:hover ~ h1 { margin-top: -50px; }
+.concept-one .hover-9:hover ~ h1 { right: 30px; margin-top: -50px; }
+.concept-one .hover-10:hover ~ h1 { right: 30px; margin-top: -50px; }
+
+/* Dark overlay (keeps the original hover effect) */
+.concept-one::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.concept-one:hover::before {
+  opacity: 0.5;
+}
+
+.spacing {
+    text-align: center;
+    margin: auto;
+    border-spacing: 15px; 
+}
+
+td {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+}
+
+.container .card .icon {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+
+}
+
+
+.container .card .slide.slide1 {
+    background: var(--card-color, #2c73df);
+}
+
+.container .card .icon .fa {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 80px;
+
+    color: #fff;
+
+}
+
+.container .card .slide {
+
+    width: 300px;
+
+    height: 200px;
+
+    transition: 0.5s;
+
+}
+
+.container .card .slide.slide1 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1;
+
+    transition: .7s;
+
+    transform: translateY(100px);
+
+}
+
+.container .card:hover .slide.slide1{
+
+    transform: translateY(0px);
+
+}
+
+.container .card .slide.slide2 {
+
+    position: relative;
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border-radius: 1px;
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    transition: .8s;
+
+    transform: translateY(-100px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
+}
+
+.container .card:hover .slide.slide2{
+
+    transform: translateY(0);
+
+}
+
+.container .card .slide.slide2::after{
+
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+
+    height: 4px;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #2c73df;
+
+}
+
+.container .card .slide.slide2 .content p {
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: #414141;
+
+}
+
+.container .card .slide.slide2 .content h3 {
+
+    margin: 0 0 10px 0;
+
+    padding: 0;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #414141;
+
+} 
+
+.concept-four {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2em;
+    background: url("Bingo.png")
+        no-repeat center center / cover;
+}
+
+.concept-four h1 {
+    display: inline-block;
+    color: #fff;
+    font: 900 60px Montserrat, sans-serif;
+    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.concept-four:hover h1 {
+    letter-spacing: 25px;
+    transform: scale(1.3);
+}
+
+.isu-table {
+    margin: 40px auto;      /* centers table */
+    width: 70%;             /* controls width */
+    border-collapse: collapse;
+    text-align: center;     /* centers text control here fat bro */
+}
+
+.isu-table td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.isu-table p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.concept-fif {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2em;
+    background: url("https://icolorpalette.com/download/solidcolorimage/739bd0_solid_color_background_icolorpalette.png")
+        no-repeat center center / cover;
+            height: 32vh;
+    margin-top: 0px;
+}
+
+.concept-fif h1 {
+    display: inline-block;
+    color: #fff;
+    font: 900 60px Montserrat, sans-serif;
+    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.concept-fif:hover h1 {
+    letter-spacing: 25px;
+    transform: scale(1.1);
+}
+
+.concept-six {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2em;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RczlEOxbxLMdvpO1inQtVbLo6DzOoi3q5A&s")
+        no-repeat center center / cover;
+            height: 32vh;
+    margin-top: 0px;
+}
+
+.concept-six h1 {
+    display: inline-block;
+    color: #fff;
+    font: 900 60px Montserrat, sans-serif;
+    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.concept-six:hover h1 {
+    letter-spacing: 25px;
+    transform: scale(1.1);
+}
+
+
+.concept-sev {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2em;
+    background: url("https://www.haworth.com/content/dam/surfaces/north-america/trim/smooth/other/6r_56/6r_56.jpg")
+        no-repeat center center / cover;
+            height: 32vh;
+    margin-top: 0px;
+}
+
+.concept-sev h1 {
+    display: inline-block;
+    color: #fff;
+    font: 900 60px Montserrat, sans-serif;
+    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.concept-sev:hover h1 {
+    letter-spacing: 25px;
+    transform: scale(1.1);
+}
+
+.hover-underline {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0f950f, #61b654b6);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+
+.hover-underline2 {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline2::after,
+.hover-underline2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #18b99e, #5388fab6);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline2::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline2:hover::after,
+.hover-underline2:hover::before {
+  transform: scaleX(1);
+}
